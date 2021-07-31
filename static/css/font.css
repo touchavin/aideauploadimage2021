@@ -1,0 +1,140 @@
+body{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 900;
+}
+
+ nav{
+    background-color: #CCF4ED ;
+    
+ }
+
+ #A{
+     margin-top: 5%;
+ }
+.btn-1{
+    padding: 10px;
+    display: inline-block;
+    background-image: url("../img/BGbtn.png");
+    background-size: cover;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 0%;
+    cursor: pointer;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    position: absolute;
+    margin-left: 25%;
+    width: 45%;
+    
+}
+
+.btn-2{
+    padding: 10px;
+    display: inline-block;
+    background-image: url("../img/BGbtn.png");
+    background-size: cover;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 5% ;
+   
+    cursor: pointer;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    position: absolute;
+    
+    width: 45%;
+    
+}
+
+.btn-3{
+    padding: 10px;
+    display: inline-block;
+   
+    background-image: url("/img/BGbtn.png");
+    background-size: cover;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 2%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    position: absolute;
+     left: 2px;
+    
+    
+    
+}
+.btn3_submit{
+    padding: 10px;
+    display: inline-block;
+   
+    background-color: gray;
+    background-size: cover;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 2%;
+    
+    cursor: pointer;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    position: absolute;
+     right: 2px;
+}
+
+.btn-4{
+    padding: 10px;
+    display: inline-block;
+    background-image: url("/img/BGbtn.png");
+    background-size: cover;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 2%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    position: absolute;
+    margin-left: 25%;
+    width: 50%;
+    
+}
+
+#btn-choosefile{
+   background-color: chocolate;
+}
+
+
+.container-fluid-1{
+    background-color:#F5F5F5;
+    border-radius: 12px;
+}
+
+.container-image-alige{
+    margin-top: 5%;
+}
+
+.container-fram{
+    background-color:#F5F5F5;
+    border-radius: 12px;
+    margin-top: 5%;
+}
+
+li#B{
+    font-size: 16px;
+}

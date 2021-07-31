@@ -1359,5 +1359,11 @@ def home(request): #หน้า good.html
     return render(request, 'home.html')
 
 def complete(request):
+
     return render(request, 'complete.html')
+
+
+def objective(request):
+    return render(request, 'objective.html')
+
 

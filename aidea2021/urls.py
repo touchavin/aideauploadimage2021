@@ -18,7 +18,7 @@ from django.urls import path
 from uploadimage.views import home
 from uploadimage.views import upload
 from uploadimage.views import complete
-
+from uploadimage.views import objective
 
 
 from django.conf import settings
@@ -29,4 +29,8 @@ urlpatterns = [
     path('home', home),
     path('upload', upload),
     path('complete', complete),
+    path('objective', objective),
+
+
+   
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
