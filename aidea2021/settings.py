@@ -81,10 +81,10 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd5ub69k8k457op',
-        'USER': 'vekazysfpiamjy',
-        'PASSWORD': 'db1722c93bf23bc2bcb79a186e1f0062d14e6b0a1157f33377ac3d6845316ced',
-        'HOST': 'ec2-54-83-82-187.compute-1.amazonaws.com',
+        'NAME': 'd9co2crkm8pivq',
+        'USER': 'dfgsakzxfopudp',
+        'PASSWORD': '06e852d046ab2237795fafb6976d6f17ad5948407aa0c0c7da63a31498729c83',
+        'HOST': 'ec2-52-72-125-94.compute-1.amazonaws.com',
         'PORT': '5432',
 
 
@@ -129,6 +129,7 @@ USE_TZ = True
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
+
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
