@@ -34,7 +34,7 @@ def upload(request): #หน้า aidea.html
         # รหัสพนักงาน
         job_officerid = request.POST['Partner']
         # ระดับแรงดัน
-        vol_name = request.POST['subject1']
+        vol_name = request.POST['typeDataBox']
         # ชนิดอุปกรณ์
         eq_name = request.POST['subject']
         # ประเภทอุปกรณ์
