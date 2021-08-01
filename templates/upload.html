@@ -108,7 +108,7 @@
                             <br>
 
                             <br> สาเหตุการชำรุด:
-                            <select multiple="multiple" class="multiple-select" name="chapter[]" id="chapter"></select>
+                            <select multiple="multiple" class="multiple-select" name="chapter[]" id="chapter" placeholder="สาเหตุการชำรุด"></select>
 
                         </form>
                         <div>
@@ -412,6 +412,7 @@
                 `<option value=" " selected="selected">ชนิดอุปกรณ์</option>`
             );
             $("#chapter").append('');
+
             for (var i = 0; i < typeData.length; i++) {
                 $(".radio_box").append(
                     `<label> 
