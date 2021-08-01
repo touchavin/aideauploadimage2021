@@ -1,0 +1,270 @@
+header {
+    font-family: 'Kanit', sans-serif;
+    background: url('/G:\\aidea\\aidea2021\\static\\image\\hero-bg.png') no-repeat center center;
+    background-size: contain;
+    background-color: black;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    height: 500px;
+}
+
+.features-icons {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.features-icons-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #CCF4ED;
+}
+
+.showcase-img {
+    background-size: cover;
+    min-height: 30rem;
+}
+
+.showcase-text {
+    padding: 10rem;
+}
+
+.testimonials {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+
+.testimonials .testimonials-item img {
+    max-width: 12rem;
+    box-shadow: 0 5px 5px #CCF4ED;
+}
+
+
+/* .call-to-action {
+    background: url("../img/banner.jpg") no-repeat center center;
+    background-size: cover;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+} */
+
+footer {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background: url('../img/black.jpg') no-repeat center center;
+    background-size: cover;
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+    height: 100px;
+}
+
+@media screen and (max-width: 300px) {
+    .showcase-text {
+        padding: 4rem;
+    }
+    .showcase-img {
+        min-height: 15rem;
+    }
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 900;
+}
+
+nav {
+    background-color: #CCF4ED;
+}
+
+#A {
+    margin-top: 5%;
+}
+
+.btn-1 {
+    padding: 10px;
+    display: inline-block;
+    background-image: url("../img/BGbtn.png");
+    background-size: cover;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 0%;
+    cursor: pointer;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    position: absolute;
+    margin-left: 25%;
+    width: 45%;
+}
+
+.btn-2 {
+    padding: 10px;
+    display: inline-block;
+    background-image: url("../img/BGbtn.png");
+    background-size: cover;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 5%;
+    cursor: pointer;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    position: absolute;
+    width: 45%;
+}
+
+.btn-3 {
+    padding: 10px;
+    display: inline-block;
+    background-image: url("/img/BGbtn.png");
+    background-size: cover;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 2%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    position: absolute;
+    left: 2px;
+}
+
+.btn3_submit {
+    padding: 10px;
+    display: inline-block;
+    background-color: gray;
+    background-size: cover;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 2%;
+    cursor: pointer;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    position: absolute;
+    right: 2px;
+}
+
+.btn-4 {
+    padding: 10px;
+    display: inline-block;
+    background-image: url("/img/BGbtn.png");
+    background-size: cover;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 2%;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: none;
+    color: white;
+    position: absolute;
+    margin-left: 25%;
+    width: 50%;
+}
+
+#btn-choosefile {
+    background-color: chocolate;
+}
+
+.container-fluid-1 {
+    background-color: #F5F5F5;
+    border-radius: 12px;
+}
+
+.container-image-alige {
+    margin-top: 5%;
+}
+
+.container-fram {
+    background-color: #F5F5F5;
+    border-radius: 12px;
+    margin-top: 5%;
+}
+
+li#B {
+    font-size: 16px;
+}
+
+P#a {
+    margin-top: 0%;
+    color: #000000;
+    font-size: 14px;
+}
+
+#jpg-png {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+#partname {
+    border-radius: 5px;
+    width: 80%;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+#jub {
+    margin-top: 5%;
+}
+
+#c {
+    font-size: 16px
+}
+
+h3 {
+    margin-top: 5%;
+    font-size: 18px;
+}
+
+h5 {
+    margin-top: 0%;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+h4 {
+    margin-top: 5%;
+    letter-spacing: 1px;
+    color: #26B69C;
+    font-size: 18px
+}
+
+#htab {
+    margin-left: 1px;
+}
+
+#smbt {
+    margin-left: 1%;
+}
+
+#btn-success {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    color: #26B69C;
+    margin-right: 50%;
+}
+
+li {
+    color: #CCF4ED;
+    font-size: 14px;
+}
+
+a {
+    color: #CCF4ED;
+}
