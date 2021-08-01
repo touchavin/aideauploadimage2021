@@ -111,8 +111,9 @@ padding-bottom: 7rem;
 </style>
 
 <body>
+    {% csrf_token %}
     <nav class="navbar navbar-dark bg-dark">
-        {% csrf_token %}
+
         <div class="container-fluid">
             <a class="navbar-brand" href="">
                 <img src="{% static 'image/LGAiDea.png' %}" alt="" width="30" height="24" class="d-inline-block align-text-top">
