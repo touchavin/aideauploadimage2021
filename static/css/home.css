@@ -1,6 +1,6 @@
 header {
     font-family: 'Kanit', sans-serif;
-    background: url('/G:\\aidea\\aidea2021\\static\\image\\hero-bg.png') no-repeat center center;
+    background: url('../img/hero-bg.png') no-repeat center center;
     background-size: contain;
     background-color: black;
     padding-top: 0rem;
@@ -258,13 +258,4 @@ h4 {
     display: inline-block;
     color: #26B69C;
     margin-right: 50%;
-}
-
-li {
-    color: #CCF4ED;
-    font-size: 14px;
-}
-
-a {
-    color: #CCF4ED;
 }
