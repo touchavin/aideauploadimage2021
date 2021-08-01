@@ -201,7 +201,7 @@ def upload(request): #หน้า aidea.html
                 # สาเหตุการชำรุด
                 if  abnor_name =="สภาพปกติ":
                     abnor_name ="01"
-
+                    
                 if  abnor_name =="บิ่น,แตก":
                     abnor_name ="02"
 
