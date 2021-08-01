@@ -12,12 +12,78 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/complete.css' %}">
     <title>AIDEA</title>
     <link rel="shortcut icon" href="{% static 'image/LGAiDea.png' %}">
+    <link rel="stylesheet" href=" {% static 'css/font.css' %}">
+    <link rel="stylesheet" href=" {% static 'css/font2.css' %}">
+    <link rel="stylesheet" href=" {% static 'css/custom.css' %}">
 </head>
 
 <body>
-    <h1>Hello, world!</h1>
-    <img id="image" src="{% static 'image/12.png' %}" alt="Placeholder" width="200" height="150">
 
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Navbar  -->
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+            <!-- Brand/logo -->
+            <a class="navbar-brand" href="#">
+                <img src="{% static 'image/LGAiDea.png' %}" alt="logo" style="width:40px;">
+            </a>
+            <!-- <a href="#" class="navbar-brand">Aidea</a> -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="/index0.html" class="nav-link active" aria-current="page">หน้าหลัก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/index2.html" class="nav-link">อัพโหลดรูปภาพ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/index1.html" class="nav-link">วัตถุประสงค์และเงื่อนไขกิจกรรม</a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+
+    <submit class="bg-light">
+        <div class="container ">
+            <div class="row">
+
+                <div class="col-xl-9 mx-auto ">
+
+
+                    <img src="{% static 'image/finish.jpg' %}" class="rounded mx-auto d-block" style="margin-top: 10%;" alt="...">
+                </div>
+
+
+
+                <div class="container " id="">
+
+                    <button type="submit" href="/upload.html" class="btn-4 col-md-10 col-lg-8 col-xl-7 col-xl-9 mx-auto text-center " style="left: 25%; margin-top: 5%;">อัพโหลดรูปภาพเพิ่มเติม</button>
+
+
+                </div>
+
+
+
+    </submit>
+
+    <div class="col-md-10 col-lg-8 col-xl-7 mx-auto" style="margin-top: 30% ;">
+
+        <div class="col-xl-9 mx-auto">
+            <a href="/home.html" class="card-link">
+                <h5 class="text-center" style="color: gray;">กลับสู่หน้าหลัก</h5>
+            </a>
+        </div>
+
+    </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
