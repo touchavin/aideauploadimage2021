@@ -14,9 +14,11 @@
     <title>AIDEA</title>
     <link rel="shortcut icon" href="{% static 'image/LGAiDea.png' %}">
     <!-- <link rel="stylesheet" href=" {% static 'css/custom.css' %}"> -->
+    <link rel="stylesheet" href=" {% static 'css/custom.css' %}">
     <link rel="stylesheet" href=" {% static 'css/custom indwex.css' %}">
     <link rel="stylesheet" href=" {% static 'css/font.css' %}">
     <link rel="stylesheet" href=" {% static 'css/font2.css' %}">
+
 
     <!-- <link rel="stylesheet" href=" {% static 'css/bootstrap-grid.css' %}"> 
 <link rel="stylesheet" href=" {% static 'css/bootstrap-grid.css.map' %}">
@@ -48,75 +50,38 @@
         font-family: 'Kanit', sans-serif;
         background: url("{% static 'image/hero-bg.png' %}")no-repeat center center;
         background-size: contain;
-        background-color: black;
-        padding-top: 0rem;
-        padding-bottom: 0rem;
+        /* background-color: black; */
+        margin-top: 10%;
         height: 500px;
     }
     
-    .features-icons {
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-    }
-    
-    .features-icons-icon {
-        font-size: 3rem;
-        margin-bottom: 1rem;
-        color: #CCF4ED;
-    }
-    
-    .showcase-img {
+    .btn-1 {
+        padding: 10px;
+        display: inline-block;
+        background: url("{% static 'image/BGbtn.png' %}");
         background-size: cover;
-        min-height: 30rem;
-    }
-    
-    .showcase-text {
-        padding: 10rem;
-    }
-    
-    .testimonials {
-        padding-top: 7rem;
-        padding-bottom: 7rem;
-    }
-    
-    .testimonials .testimonials-item img {
-        max-width: 12rem;
-        box-shadow: 0 5px 5px #CCF4ED;
-    }
-    /* .call-to-action {
-background: url("../img/banner.jpg") no-repeat center center;
-background-size: cover;
-padding-top: 7rem;
-padding-bottom: 7rem;
- } */
-    
-    footer {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        background: url("{% static 'image/black.jpg' %}") no-repeat center center;
-        background-size: cover;
-        padding-top: 1rem;
-        padding-bottom: 4rem;
-        height: 100px;
-    }
-    
-    @media screen and (max-width: 300px) {
-        .showcase-text {
-            padding: 4rem;
-        }
-        .showcase-img {
-            min-height: 15rem;
-        }
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 0%;
+        cursor: pointer;
+        border-radius: 12px;
+        border: none;
+        color: white;
+        position: absolute;
+        margin-left: 25%;
+        width: 45%;
     }
 </style>
 
 <body>
     {% csrf_token %}
-    <nav class="navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light ">
 
         <div class="container-fluid">
             <a class="navbar-brand" href="">
-                <img src="{% static 'image/LGAiDea.png' %}" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                <img src="{% static 'image/LGAiDea.png' %}" alt="" width=40px; class="d-inline-block align-text-top">
 
             </a>
 
@@ -162,7 +127,7 @@ padding-bottom: 7rem;
         </div>
         <div class="container " id="A">
 
-            <a href="/upload"> <button type="submit" class="btn-1 col-md-10 col-lg-8 col-xl-7 col-xl-9 mx-auto text-center " style="left: 25%;">อัพโหลดรูปภาพ</button> </a>
+            <a href="/upload"> <button type="submit" class="btn-1 col-md-10 col-lg-8 col-xl-7 col-xl-9 mx-auto text-center " style="left: 25%; margin-top: 5%;">อัพโหลดรูปภาพ</button> </a>
 
         </div>
 

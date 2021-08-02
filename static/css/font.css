@@ -116,13 +116,24 @@ body{
 }
 
 #btn-choosefile{
-   background-color: chocolate;
+ width: 300px;
+   border-radius: 1px;
+   border: groove 0.5em #26B69C;
+    border-radius: 1em;
+    margin-left:10% ;
+    margin-bottom: 10%;
+
 }
 
 
 .container-fluid-1{
-    background-color:#F5F5F5;
-    border-radius: 12px;
+    
+    /* border-radius: 10px;
+    border: dashed;
+border-width: 3px 5px;
+border-radius: 1.5px; */
+background-color:#F5F5F5;
+border-radius: 12px;
 }
 
 .container-image-alige{
@@ -135,6 +146,39 @@ body{
     margin-top: 5%;
 }
 
+#btn_submit_S{
+   
+    background-image: url("../img/BGbtn.png");
+     border-radius: 1px;
+     border-radius: 1rem;
+}
+#btn_submit_B{
+   
+    background-image: url("../img/BGbtn.png");
+    border-radius: 1px;
+   /* border: groove 0.5em #26B69C; */
+    border-radius: 1em;
+    /* background-color:#78D2AF; */
+    
+}
+.container_S{
+    margin-left: 40%;
+}
+
+.container_B{
+    margin-left: 40%;
+}
+
 li#B{
     font-size: 16px;
 }
+
+
+
+li{
+    color: #CCF4ED;
+    font-size: 14px;
+  }
+  a{
+    color: #CCF4ED;
+  }

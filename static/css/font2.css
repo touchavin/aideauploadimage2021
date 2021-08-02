@@ -23,14 +23,20 @@ P#a{
 #jub{
   margin-top: 5%;
 }
+
 #c{
- 
-  font-size: 16px
+  
+    font-size: 16px;
 }
+
 h3 {
   margin-top: 5%;
   font-size: 18px;
+ 
   
+}
+#Hed{
+  font-weight: 700;
 }
 h5 {
   margin-top: 0%;

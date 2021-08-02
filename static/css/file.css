@@ -1,0 +1,19 @@
+
+input [type="file"] {
+display: none;
+}
+label{
+    color: brown;
+    height: 60px;
+    width: 250px;
+    background-color: burlywood;
+    position:absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0%;
+    right:0;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+

@@ -2,7 +2,7 @@ header {
     font-family: 'Kanit', sans-serif;
     background: url('../img/hero-bg.png') no-repeat center center;
     background-size: contain;
-    background-color: black;
+    /* background-color: black; */
     padding-top: 0rem;
     padding-bottom: 0rem;
     height: 500px;

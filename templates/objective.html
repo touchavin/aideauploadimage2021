@@ -12,24 +12,53 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/objective.css' %}">
     <title>AIDEA</title>
     <link rel="shortcut icon" href="{% static 'image/LGAiDea.png' %}">
-    <link rel="stylesheet" href=" {% static 'css/font.css' %}">
-    <link rel="stylesheet" href=" {% static 'css/font2.css' %}">
-    <link rel="stylesheet" href=" {% static 'css/custom.css' %}">
-</head>
 
+    <link rel="stylesheet" href=" {% static 'css/custom.css' %}">
+    <!-- <link rel="stylesheet" href=" {% static 'css/custom indwex.css' %}"> -->
+    <!-- <link rel="stylesheet" href=" {% static 'css/font.css' %}"> -->
+    <link rel="stylesheet" href=" {% static 'css/font2.css' %}">
+
+</head>
+<style>
+    header {
+        font-family: 'Kanit', sans-serif;
+        background: url("{% static 'image/hero-bg.png' %}")no-repeat center center;
+        background-size: contain;
+        background-color: black;
+        margin-top: 10%;
+        height: 500px;
+    }
+    
+    .btn-1 {
+        padding: 10px;
+        display: inline-block;
+        background: url("{% static 'image/BGbtn.png' %}");
+        background-size: cover;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 0%;
+        cursor: pointer;
+        border-radius: 12px;
+        border: none;
+        color: white;
+        position: absolute;
+        margin-left: 25%;
+        width: 45%;
+    }
+</style>
 
 <body>
-    <!-- <h1>Hello, world!</h1>
-    <img id="image" src="{% static 'image/12.png' %}" alt="Placeholder" width="200" height="150"> -->
-    <!-- Optional JavaScript; choose one of the two! -->
-    <!-- Navbar  -->
+    {% csrf_token %}
     <nav class="navbar navbar-expand-lg navbar-light ">
-        <div class="container">
-            <!-- Brand/logo -->
-            <a class="navbar-brand" href="#">
-                <img src="{% static 'image/LGAiDea.png' %}" alt="logo" style="width:40px;">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="">
+                <img src="{% static 'image/LGAiDea.png' %}" alt="" width=40px; class="d-inline-block align-text-top">
+
             </a>
-            <!-- <a href="#" class="navbar-brand"></a> -->
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -37,16 +66,14 @@
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a href="/index0.html" class="nav-link active" aria-current="page">หน้าหลัก</a>
+                        <a href="/home" class="nav-link active" aria-current="page">หน้าหลัก</a>
                     </li>
                     <li class="nav-item">
                         <a href="/upload" class="nav-link">อัพโหลดรูปภาพ</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/objective" class="nav-link ">วัตถุประสงค์และเงื่อนไขกิจกรรม</a>
+                        <a href="/objective" class="nav-link">วัตถุประสงค์และเงื่อนไขกิจกรรม</a>
                     </li>
-
-
                 </ul>
             </div>
         </div>
@@ -59,7 +86,7 @@
     <div class="container ">
       <div class="row">
         <div class="col-xl-9 mx-auto">
-        <h3 class="text-center" style="letter-spacing: 1px;">วัตถุประสงค์และเงื่อนไขกิจกรรม</h3>
+        <h3  id="Hed" class="text-center" style="letter-spacing: 1px;">วัตถุประสงค์และเงื่อนไขกิจกรรม</h3>
         </div>
         
         <div class="col-xl-9 mx-auto">
@@ -92,10 +119,11 @@
                <div class="col-xl-9 mx-auto">
                 <h5 class="font-weight-light" style="letter-spacing:1px;">ผู้เข้าร่วมกิจกรรมทุกท่านจะได้ลุ้นรับรางวัล มูลค่ารวมกว่า  3,000 บาท โดยมีเงื่อนไขในการ พิจารณารางวัล คือ 1 รูป เท่ากับ 1 คะแนน ซึ่งผู้ที่ได้รับคะแนนสูงสุด 8 อันดับแรก รับไปเลย บัตรแทนเงินสด Tesco Lotus</h5>
                  
-                    <ul>
+                    <h5><ul>
                       <li id="c" class="font-weight-light" style="letter-spacing:1px;">มูลค่า 500 บาท จำนวน 3 รางวัล</li>
                       <li id="c" class="font-weight-light" style="letter-spacing:1px;">มูลค่า 300 บาท จำนวน 5 รางวัล </li>
                      </ul>
+                     </h5>
                 
                  <h5 class="font-weight-light" >ยิ่งส่งมาก ยิ่งมีสิทธิ์ได้รับรางวัลมาก !</h5>
                 </div>
@@ -116,12 +144,13 @@
                     </div>
                   </div>
 
-                  <div class="container " id="A"  >
-        
-                    <button type="submit" href="/home" class="btn-2 col-md-10 col-lg-8 col-xl-7 col-xl-9 mx-auto text-center " style="left: 28% ;"  >ย้อนกลับ</button> 
-                 
-               </div>
+                  
 
+               <div class="container " id="A" style="margin-bottom:5%;">
+
+                <a href="/home"> <button type="submit" class="btn-1 col-md-10 col-lg-8 col-xl-7 col-xl-9 mx-auto text-center " style="left: 25%; margin-top: 5%; margin-bottom: 5%;">ย้อนกลับ</button> </a>
+    
+            </div>
               
       </div>
     </text>
@@ -130,7 +159,7 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="{% static 'js/objective.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
