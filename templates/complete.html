@@ -16,6 +16,8 @@
     <link rel="stylesheet" href=" {% static 'css/font2.css' %}">
     <link rel="stylesheet" href=" {% static 'css/custom.css' %}">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;500;600;700&display=swap" rel="stylesheet">
 
 
@@ -53,20 +55,95 @@
         color: white;
         position: absolute;
     }
+    /* Add a black background color to the top navigation */
+    
+    .topnav {
+        background-color: #CCF4ED;
+        overflow: hidden;
+    }
+    /* Style the links inside the navigation bar */
+    
+    .topnav a {
+        float: left;
+        display: block;
+        color: #726F69;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    /* Change the color of links on hover */
+    
+    .topnav a:hover {
+        background-color: #CCF4ED;
+        color: black;
+    }
+    /* Add an active class to highlight the current page */
+    
+    .topnav a.active {
+        background-color: #CCF4ED;
+        color: black;
+    }
+    /* Hide the link that should open and close the topnav on small screens */
+    
+    .topnav .icon {
+        display: none;
+    }
+    /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+    
+    @media screen and (max-width: 600px) {
+        .topnav a:not(:first-child) {
+            display: none;
+        }
+        .topnav a.icon {
+            float: right;
+            display: block;
+        }
+    }
+    /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+    
+    @media screen and (max-width: 600px) {
+        .topnav.responsive {
+            position: relative;
+        }
+        .topnav.responsive a.icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+        }
+    }
 </style>
 
 <body>
+    <nav class="topnav" id="myTopnav">
+        <a class="navbar-brand" href="/home">
+            <img src="{% static 'image/LGAiDea.png' %}" alt="" width=40px;>
+
+        </a>
+        <a href="/home">หน้าหลัก</a>
+        <a href="/upload">อัพโหลดรูปภาพ</a>
+        <a href="/objective">วัตถุประสงค์และเงื่อนไขกิจกรรม</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
 
     <!-- Optional JavaScript; choose one of the two! -->
     <!-- Navbar  -->
-    <nav class="navbar navbar-expand-lg navbar-light ">
-        <div class="container">
-            <!-- Brand/logo -->
-            <a class="navbar-brand" href="#">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container"> -->
+    <!-- Brand/logo -->
+    <!-- <a class="navbar-brand" href="#">
                 <img src="{% static 'image/LGAiDea.png' %}" alt="logo" style="width:40px;">
             </a>
             <!-- <a href="#" class="navbar-brand">Aidea</a> -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -86,7 +163,7 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
 
     <!-- Header -->
 
@@ -125,7 +202,17 @@
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
-
+    <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
 </body>
 
 </html>
