@@ -216,6 +216,9 @@
                 );
             });
     </script>
+
+
+
     <form name="myform" method="POST" enctype="multipart/form-data" style="margin-top: 5%; margin-bottom: 5%;">
         {% csrf_token %}
         <form name="myform" method="POST" enctype="multipart/form-data" style="margin-top:5%;">
@@ -279,6 +282,17 @@
                             </div>
                         </div>
 
+                        <!-- ขนาดไฟล์เกิน 4 MB -->
+                        <script>
+                            var uploadField = document.getElementById("btn-choosefile");
+
+                            uploadField.onchange = function() {
+                                if (this.files[0].size > 4194304) {
+                                    alert("ขนาดไฟล์เกิน 4 MB!");
+                                    this.value = "";
+                                };
+                            };
+                        </script>
 
                 </div>
                 <h5 style="margin-top: 5%;">ระบุรายละเอียดของอุปกรณ์ในภาพถ่าย</h5>
