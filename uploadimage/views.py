@@ -35,13 +35,15 @@ def upload(request): #หน้า aidea.html
         job_officerid = request.POST['Partner']
         # ระดับแรงดัน
         vol_name = request.POST['typeDataBox']
-        # ชนิดอุปกรณ์
-        eq_name = request.POST['subject']
         # ประเภทอุปกรณ์
+        eq_name = request.POST['subject']
+        # ชนิดอุปกรณ์
         subeq_name = request.POST['topic']
         # สาเหตุการชำรุด
         abnor_name = request.POST.getlist('chapter[]')
+        # อื่นๆ
         abnor_other = request.POST['other']
+        # รูปภาพ
         f_image = request.FILES['image']
 
         # abnor_name = ",".join(abnor_name)
@@ -123,6 +125,7 @@ def upload(request): #หน้า aidea.html
 
                 if  eq_name == "CT/VT":
                     eq_name = "CV"
+
             
                 print("-----------------------")
                 print(vol_name)
