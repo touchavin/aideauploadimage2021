@@ -1374,4 +1374,5 @@ def complete(request):
 def objective(request):
     return render(request, 'objective.html')
 
-
+def example(request):
+    return render(request, 'example.html')
