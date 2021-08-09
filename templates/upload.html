@@ -186,13 +186,14 @@
             </div>
         </div>
     </nav>  -->
-
+    <!-- SHOW IMAGE -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
         function previewFile(input) {
             var file = $("input[type=file]").get(0).files[0];
 
             if (file) {
+
                 var reader = new FileReader();
 
                 reader.onload = function() {
@@ -203,6 +204,10 @@
             }
         }
     </script>
+
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
     <script>
         $(document).ready(
@@ -282,8 +287,8 @@
                             </div>
                         </div>
 
-                        <!-- ขนาดไฟล์เกิน 4 MB
-                        <script>
+                        <!-- ขนาดไฟล์เกิน 4 MB -->
+                        <!-- <script>
                             var uploadField = document.getElementById("btn-choosefile");
 
                             uploadField.onchange = function() {
@@ -302,6 +307,8 @@
                             width: 80%;
                         }
                     </style>
+
+
                     <h4>อุปกรณ์ที่ 1</h4>
                     <form name="myform" method="POST" id="myformy" enctype="multipart/form-data">
 
@@ -322,7 +329,7 @@
                     <div>
                         <br>
                         <label for="title">อื่นๆ :</label>
-                        <input type="text" name="other" id="othery" placeholder="อื่นๆ" />
+                        <input type="text" name="other" id="other" placeholder="อื่นๆ" />
                     </div>
 
                     <br>
@@ -627,12 +634,15 @@
             }
 
             function addData() {
+                $("#subject").empty();
                 $("#subject").append(
                     ` <option value=" " selected="selected">ประเภทอุปกรณ์</option>`
                 );
+                $("#topic").empty();
                 $("#topic").append(
                     `<option value=" " selected="selected">ชนิดอุปกรณ์</option>`
                 );
+                $("#chapter").empty();
                 $("#chapter").append('');
 
                 for (var i = 0; i < typeData.length; i++) {
